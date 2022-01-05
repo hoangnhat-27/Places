@@ -1,0 +1,159 @@
+/* extelnal css */
+
+* {
+    font-family: "Dancing Script", cursive;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+.header {
+    height: 25%;
+    width: 100%;
+    background-image: url("../img/Cities.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header h2 {
+    color: white;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: -webkit-fill-available;
+}
+
+.main {
+    height: 50%;
+    width: 100%;
+    background-color: rgb(122, 81, 81);
+    display: flex;
+}
+
+.main .content-left {
+    background-color: rgb(14, 80, 119);
+    height: auto;
+    width: 25%;
+}
+
+.main .content-right {
+    background-color: rgb(5, 6, 51);
+    height: auto;
+    width: 75%;
+}
+
+ul {
+    list-style: none;
+    padding-top: 25px;
+    font-size: 20px;
+}
+
+ul li {
+    border: 1px solid #000000;
+    padding: 15px;
+    margin: 10px;
+    width: 60%;
+    background-color: #075f7a;
+}
+
+ul li:hover {
+    background-color: pink;
+}
+
+ul li a {
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.content-info {
+    color: white;
+    padding: 15px 15px 0 15px;
+    font-size: 20px;
+    height: 100%;
+}
+
+.content-info .content-heading {
+    text-align: center;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+img {
+    width: 20%;
+    height: 20%;
+    padding: 10px 0;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+
+.footer {
+    height: 25%;
+    width: 100%;
+    color: white;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/Cities.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* responsive */
+
+.container {
+    width: 55%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 740px) and (max-width: 1023px) {
+    .container {
+        width: 100%;
+        margin: 0;
+        height: 100%;
+    }
+    img {
+        display: none;
+    }
+    ul {
+        padding-left: 20px;
+        padding-top: 10px;
+    }
+    .content-info {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 740px) {
+    .container {
+        width: 100%;
+    }
+    ul {
+        padding: 5px 0 5px 5px;
+    }
+    .content-info {
+        font-size: 15px;
+    }
+    img {
+        display: none;
+    }
+}
